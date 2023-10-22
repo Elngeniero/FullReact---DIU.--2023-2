@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #489DEC;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -31,27 +31,26 @@
 .nav-bar {
   display: flex;
   justify-content: space-around;
-  background-color: #333; /* Background color */
+  background-color: #489DEC; /* Background color */
   padding: 10px;
-  border-bottom: 2px solid #444; /* Bottom border */
 }
 
 /* Navbar Links */
 .nav-bar__link {
   text-decoration: none;
-  color: #fff; /* Link text color */
+  color: white; /* Link text color */
   padding: 10px 20px;
   transition: color 0.2s;
   font-size: 16px;
 }
 
 .nav-bar__link:hover {
-  color: #00bcd4; /* Link text color on hover */
+  color: black; /* Link text color on hover */
 }
 
 /* Active Link Style */
 .nav-bar__link--active {
-  color: #00bcd4; /* Active link text color */
+  color: #047BE9; /* Active link text color */
   font-weight: bold;
 }
 
@@ -99,7 +98,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #0056b3;
+  background-color: #047BE9;
 }
 
 

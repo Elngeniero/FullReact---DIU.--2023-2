@@ -5,7 +5,6 @@ export default function SimpleForm() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    number: '', // Initialize as an empty string
     deptNumber: '', // Initialize as an empty string
     selection: 'Gastos comunes',
   });
@@ -37,9 +36,10 @@ export default function SimpleForm() {
           name="name"
           value={formData.name}
           onChange={handleInputChange}
+          placeholder='Roberto'
+          disabled
         />
       </div>
-
       <div>
         <label>Email:</label>
         <input
@@ -47,30 +47,23 @@ export default function SimpleForm() {
           name="email"
           value={formData.email}
           onChange={handleInputChange}
-        />
-      </div>
-
-      <div>
-        <label>Numero de Celular:</label>
-        <input
-          type="number"
-          name="number"
-          value={formData.number}
-          onChange={handleInputChange}
+          placeholder='Roberto84@gmail.com'
+          disabled
         />
       </div>
       <div>
-        <label>Numero de Departamento:</label>
+        <label>N° de Departamento:</label>
         <input
           type="number"
           name="deptNumber"
           value={formData.deptNumber}
           onChange={handleInputChange}
+          placeholder='202'
+          disabled
         />
       </div>
-
       <div>
-        <label>Tipo de cuenta:</label>
+        <label>Seleccione Cuenta a Pagar:</label>
         <select
           name="selection"
           value={formData.selection}
