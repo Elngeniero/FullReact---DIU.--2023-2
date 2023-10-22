@@ -16,6 +16,12 @@ export const NavBar = () => {
       >
         Pago de cuentas
       </NavLink>
+      <NavLink
+        className={({ isActive }) => `nav-bar__link ${isActive ? 'nav-bar__link--active' : ''}`}
+        to='/reserva'
+      >
+        Reservar Espacio
+      </NavLink>
     </nav>
   )
 }
