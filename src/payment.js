@@ -19,7 +19,7 @@ function PaymentApp(props) {
       ) : (
         <div>
           <p>Total a pagar de {props.string}: ${generateAmount()}</p>
-          <button onClick={handlePayment}>Pay Now</button>
+          <button onClick={handlePayment}>Pagar ahora</button>
         </div>
       )}
     </div>
